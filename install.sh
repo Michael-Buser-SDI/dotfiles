@@ -1,6 +1,3 @@
-# mkdir ~/.config/nvim
-# touch ~/.config/nvim/init.lua
-
-sudo apt-get install neovim & disown
+sudo apt-get install neovim
 
 
