@@ -1,3 +1,3 @@
-yes | sudo apt-get install neovim & disown
+yes | sudo apt-get install neovim
 
 
