@@ -6,5 +6,4 @@ cp -a ./config/. ~/.config
 cp .tmux.conf ~/
 
 yes | sudo apt-get install neovim
-
-
+yes | sudo apt install tmux
