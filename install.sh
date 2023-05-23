@@ -10,4 +10,5 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 rm nvim.appimage
 
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+mkdir ~/.config/nvim/lua/user
 cp ./init.lua ~/.config/nvim/lua/user/
