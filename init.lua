@@ -1,3 +1,8 @@
+local function run(cmd)
+  vim.schedule(function()
+    vim.cmd(cmd);
+  end)
+end
 return {
   mappings = {
     n = {
@@ -43,4 +48,17 @@ return {
     -- end
     -- },
   },
+  polish = function()
+    run(":TSInstall svelte")
+    run(":TSInstall vue")
+    run(":TSInstall typescript")
+    run(":TSInstall javascript")
+    run(":TSInstall rust")
+    run(":MasonInstall eslint_d")
+    run(":MasonInstall lua-language-server")
+    run(":MasonInstall prettier")
+    run(":MasonInstall svelte-language-server")
+    run(":MasonInstall typescript-language-server")
+    run(":MasonInstall vue-language-server")
+  end,
 }
