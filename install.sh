@@ -11,4 +11,4 @@ rm nvim.appimage
 
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 mkdir ~/.config/nvim/lua/user
-cp ./init.lua ~/.config/nvim/lua/user/init.lua
+cp ./.dotfiles/init.lua ~/.config/nvim/lua/user/init.lua
