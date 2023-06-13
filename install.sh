@@ -12,3 +12,4 @@ rm nvim.appimage
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 mkdir ~/.config/nvim/lua/user
 cp ./.dotfiles/init.lua ~/.config/nvim/lua/user/init.lua
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/SpaceMono.zip -P /usr/share/fonts && sudo mkdir /usr/share/fonts/SpaceMono && sudo unzip /usr/share/fonts/SpaceMono.zip -d /usr/share/fonts/SpaceMono
