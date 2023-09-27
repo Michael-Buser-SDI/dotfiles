@@ -1,4 +1,4 @@
-cat .tmux.conf > $HOME/.tmux.conf
+yes | sudo apt update
 
 yes | sudo apt-get install tmux ripgrep
 
@@ -12,3 +12,4 @@ rm nvim.appimage
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 mkdir ~/.config/nvim/lua/user
 cat .init.lua > $HOME/.config/nvim/lua/user/init.lua
+cat .tmux.conf > $HOME/.tmux.conf
