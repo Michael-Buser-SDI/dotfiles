@@ -2,6 +2,11 @@ yes | sudo apt update
 
 yes | sudo apt-get install tmux ripgrep
 
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/SpaceMono.zip
+sudo unzip SpaceMono.zip -d /usr/share/fonts
+sudo fc-cache -f -v
+rm -rf SpaceMono.zip
+
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage --appimage-extract
