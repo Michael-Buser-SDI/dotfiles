@@ -23,16 +23,6 @@ return {
 
   colorscheme = "synthwave84",
   plugins = {
-    -- {
-    -- "folke/tokyonight.nvim",
-    -- name = "tokyonight",
-    -- config = function()
-    -- require("tokyonight").setup {
-    -- style = "moon",
-    -- }
-    -- end,
-    -- },
-    -- No Svelte support in LSP
     {
       "lunarvim/synthwave84.nvim",
       name = "synthwave84",
@@ -40,25 +30,26 @@ return {
         require("synthwave84").setup {}
       end,
     },
-    -- {
-    -- "Mofiqul/dracula.nvim",
-    -- name = "dracula",
-    -- config = function()
-    -- require("dracula").setup {}
-    -- end
-    -- },
+{
+      "ellisonleao/glow.nvim",
+      name = "glow",
+      lazy = false,
+      config = function() require("glow").setup() end
+},
+    {
+      "themaxmarchuk/tailwindcss-colors.nvim",
+      name = "tailwindcss-colors",
+      config = function() require("tailwindcss-colors").setup() end
+    }
   },
   polish = function()
     run(":TSInstall svelte")
-    run(":TSInstall vue")
     run(":TSInstall typescript")
     run(":TSInstall javascript")
     run(":TSInstall rust")
     run(":MasonInstall eslint_d")
-    run(":MasonInstall lua-language-server")
     run(":MasonInstall prettier")
     run(":MasonInstall svelte-language-server")
     run(":MasonInstall typescript-language-server")
-    run(":MasonInstall vue-language-server")
   end,
 }
