@@ -3,7 +3,8 @@ yes | sudo apt update
 yes | sudo apt-get install tmux ripgrep
 
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/SpaceMono.zip
-sudo unzip SpaceMono.zip -d /usr/share/fonts
+mkdir /usr/share/fonts/truetype/spacemono
+sudo unzip SpaceMono.zip -d /usr/share/fonts/truetype/spacemono
 sudo fc-cache -f -v
 rm -rf SpaceMono.zip
 
