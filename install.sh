@@ -15,7 +15,8 @@ sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 rm nvim.appimage
 
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
 mkdir ~/.config/nvim/lua/user
 cat .init.lua > $HOME/.config/nvim/lua/user/init.lua
 cat .tmux.conf > $HOME/.tmux.conf
